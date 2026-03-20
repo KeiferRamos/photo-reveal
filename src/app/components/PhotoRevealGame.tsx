@@ -1,27 +1,27 @@
 import { useState, useEffect } from "react";
 import { Lock } from "lucide-react";
-import img1 from "../../assets/roque couple.jpg";
-import img2 from "../../assets/rachel-randen.jpg";
-import img9 from "../../assets/sheril.jpg";
-import img3 from "../../assets/jiether.jpg";
-import img4 from "../../assets/shaun-jona.jpg";
-import img5 from "../../assets/joel.jpg";
-import img6 from "../../assets/zyra-aris.jpg";
-import img7 from "../../assets/inu-honey.jpg";
-import img8 from "../../assets/gian-joy.jpg";
-import img10 from "../../assets/jhay.jpg";
-import img11 from "../../assets/kean.jpg";
+import img1 from "../../assets/ely.jpg";
+import img2 from "../../assets/darren.jpg";
+import img3 from "../../assets/rachel-randen.jpg";
+import img4 from "../../assets/joel.jpg";
+import img5 from "../../assets/raiko.jpg";
+import img6 from "../../assets/kelsey.jpg";
+import img7 from "../../assets/shaun-jona.jpg";
+import img8 from "../../assets/vincent.jpg";
+import img9 from "../../assets/gian-joy.jpg";
+import img10 from "../../assets/kean.jpg";
+import img11 from "../../assets/randen.jpg";
 
 const IMAGES = [
   img1,
   img2,
-  img9,
   img3,
   img4,
   img5,
   img6,
   img7,
   img8,
+  img9,
   img10,
   img11,
 ];
