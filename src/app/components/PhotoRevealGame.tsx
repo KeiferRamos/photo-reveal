@@ -11,6 +11,7 @@ import img8 from "../../assets/vincent.jpg";
 import img9 from "../../assets/gian-joy.jpg";
 import img10 from "../../assets/kean.jpg";
 import img11 from "../../assets/randen.jpg";
+import ErrorSound from "../../assets/u_8iuwl7zrk0-error-170796.mp3";
 
 const IMAGES = [
   img1,
@@ -46,6 +47,23 @@ export function PhotoRevealGame() {
 
     window.addEventListener("keydown", handleKeyPress);
     return () => window.removeEventListener("keydown", handleKeyPress);
+  }, []);
+
+  useEffect(() => {
+    const audio = new Audio(ErrorSound);
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "z") {
+        audio.currentTime = 0; // restart sound if spammed
+        audio.play();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   const handleSquareClick = (index: number) => {
